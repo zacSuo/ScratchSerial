@@ -32,8 +32,8 @@
             [' ', '放开', 'hand_free'],
             [' ', '发送数据', 'send_message'],
             ['b', '连接成功', 'check_connection'],
-            ['r', '最新接受数据', 'get_last_message']
-            ['r', "波特率: %m.baudRates", 'set_baud_rate', currentBaud],
+            ['r', '最新接受数据', 'get_last_message'],
+            ['r', "波特率: %m.baudRates", 'set_baud_rate', currentBaud]
         ],
         menus:{
             my_first_menu:['one','two','three'],
