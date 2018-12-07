@@ -16,6 +16,33 @@
         // 当模块运行时要执行的功能
     };
 
+    ext.put_up = function(){
+    };
+
+    ext.put_down = function(){
+    };
+
+    ext.move_forward = function(){
+    };
+
+    ext.move_backword = function(){
+    };
+
+    ext.hand_catch = function(){
+    };
+
+    ext.hand_free = function(){
+    };
+
+    ext.send_message = function(){
+    };
+
+    ext.check_connection = function(){
+    };
+
+    ext.get_last_message = function(){
+    };
+
     ext.set_baud_rate = function(baudRate){
         return baudRate;
     };
