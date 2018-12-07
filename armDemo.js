@@ -1,6 +1,6 @@
 
 (function(ext) {
-
+    //https://zacsuo.github.io/ScratchSerial/armDemo.js
     var currentBaud = 115200;
     var currentStatus = 1;
 
