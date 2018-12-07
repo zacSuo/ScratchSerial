@@ -40,7 +40,14 @@
     ext.check_connection = function(){
     };
 
-    ext.get_last_message = function(){
+    ext.get_last_message = function(callback){
+        $.ajax({
+            url:'http://localhost:8800',
+            success:function(msg){
+                info = msg;
+                callback(info);
+            }
+        });
     };
 
     ext.set_baud_rate = function(baudRate){
