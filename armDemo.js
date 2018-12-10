@@ -86,7 +86,7 @@
             [' ', '放 开 ', 'hand_free'],
             [' ', '发送数据 %s ', 'send_message','1'],
             ['b', '连接成功', 'check_connection'],
-            ['r', '最新接受数据', 'get_last_message'],
+            ['R', '最新接受数据', 'get_last_message'],
             ['r', "波特率: %m.baudRates", 'set_baud_rate', currentBaud]
         ],
         menus:{
