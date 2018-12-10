@@ -1,6 +1,8 @@
 
-(function(ext) {
-    //https://zacsuo.github.io/ScratchSerial/armDemo.js
+// https://zacsuo.github.io/ScratchSerial/armDemo.js
+
+(function(ext) {    
+
     var currentBaud = 115200;
     var currentStatus = 1;
 
@@ -10,11 +12,13 @@
     // 状态描述，用于提示插件的错误信息，比如不支持浏览器及版本等
     ext._getStatus = function() {
         var tmpResult = {status: 1, msg: '等待连接'};
+        /*
         if(currentStatus == 2)
         {
             tmpResult.status = 2;
             tmpResult.msg = '连接成功'；
         }
+        */
         return tmpResult;
     };
  
@@ -53,6 +57,7 @@
             success:function(msg){
                 currentStatus = 2; 
                 info = msg;
+                window.alert(info);
                 callback(info);
             }
         });
