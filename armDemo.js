@@ -53,11 +53,18 @@
 
     ext.get_last_message = function(callback){
         $.ajax({
-            url:'http://localhost:8800',
+            url:'http://localhost:8800/m',
+            type: "get", 
+            async:false,
+            contentType:"text/plain",
+            data:{
+                dt:24
+            },
             success:function(msg){
-                // currentStatus = 2; 
+                currentStatus = 2; 
+                return 'test'
                 // info = msg;
-                return msg
+                // return msg
                 // callback(info);
             }
         });
