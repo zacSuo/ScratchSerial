@@ -16,7 +16,7 @@
         if(currentStatus == 2)
         {
             tmpResult.status = 2;
-            tmpResult.msg = '连接成功'；
+            tmpResult.msg = '连接成功';
         }
         
         return tmpResult;
