@@ -58,10 +58,10 @@
                 // currentStatus = 2; 
                 // info = msg;
                 window.alert(msg);
+                return 'test'
                 // callback(info);
             }
         });
-        return 'test'
     };
 
     ext.set_baud_rate = function(baudRate){
