@@ -12,6 +12,7 @@
     // 状态描述，用于提示插件的错误信息，比如不支持浏览器及版本等
     ext._getStatus = function() {
         var tmpResult = {status: 1, msg: '等待连接'};
+        window.alert(currentStatus);
         /*
         if(currentStatus == 2)
         {
