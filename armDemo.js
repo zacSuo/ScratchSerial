@@ -62,6 +62,7 @@
                 // callback(info);
             }
         });
+        return 'test'
     };
 
     ext.set_baud_rate = function(baudRate){
