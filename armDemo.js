@@ -56,10 +56,10 @@
         $.ajax({
             url:'http://localhost:8800',
             success:function(msg){
-                currentStatus = 2; 
-                info = msg;
-                window.alert(info);
-                callback(info);
+                // currentStatus = 2; 
+                // info = msg;
+                window.alert(msg);
+                // callback(info);
             }
         });
     };
