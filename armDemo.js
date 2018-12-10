@@ -1,7 +1,8 @@
 
 // https://zacsuo.github.io/ScratchSerial/armDemo.js
 
-(function(ext) {    
+new (function() {
+    var ext = this;
 
     var currentBaud = 115200;
     var currentStatus = 1;
@@ -20,11 +21,6 @@
         }
         
         return tmpResult;
-    };
- 
-    // 功能实现
-    ext.my_first_block = function() {
-        // 当模块运行时要执行的功能
     };
 
     ext.put_up = function(){
