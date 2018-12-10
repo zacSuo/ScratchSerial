@@ -1,8 +1,7 @@
 
 // https://zacsuo.github.io/ScratchSerial/armDemo.js
 
-new (function() {
-    var ext = this;
+(function(ext) {
 
     var currentBaud = 115200;
     var currentStatus = 1;
@@ -23,25 +22,67 @@ new (function() {
         return tmpResult;
     };
 
-    ext.put_up = function(){
+    ext.put_up = function(){        
+        $.ajax({
+            url:'http://localhost:8800/p',
+            data:{
+                dt:1
+            }
+        });
     };
 
-    ext.put_down = function(){
+    ext.put_down = function(){     
+        $.ajax({
+            url:'http://localhost:8800/p',
+            data:{
+                dt:2
+            }
+        });
     };
 
     ext.move_forward = function(){
+        $.ajax({
+            url:'http://localhost:8800/m',
+            data:{
+                dt:1
+            }
+        });
     };
 
     ext.move_backword = function(){
+        $.ajax({
+            url:'http://localhost:8800/m',
+            data:{
+                dt:2
+            }
+        });
     };
 
     ext.hand_catch = function(){
+        $.ajax({
+            url:'http://localhost:8800/h',
+            data:{
+                dt:1
+            }
+        });
     };
 
     ext.hand_free = function(){
+        $.ajax({
+            url:'http://localhost:8800/h',
+            data:{
+                dt:2
+            }
+        });
     };
 
-    ext.send_message = function(){
+    ext.send_message = function(msg){
+        $.ajax({
+            url:'http://localhost:8800/msg',
+            data:{
+                dt:msg
+            }
+        });
     };
 
     ext.check_connection = function(){
@@ -58,13 +99,10 @@ new (function() {
             },
             success:function(msg){
                 currentStatus = 2; 
-                return 'test'
                 // info = msg;
-                // return msg
                 // callback(info);
             }
         });
-        return currentStatus;
     };
 
     ext.set_baud_rate = function(baudRate){
