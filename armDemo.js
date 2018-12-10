@@ -57,8 +57,7 @@
             success:function(msg){
                 // currentStatus = 2; 
                 // info = msg;
-                window.alert(msg);
-                return 'test'
+                return msg
                 // callback(info);
             }
         });
